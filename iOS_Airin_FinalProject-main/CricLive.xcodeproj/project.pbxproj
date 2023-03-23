@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33FDF51853643B373B3CAD9B /* Pods_CricLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED6B95B5E4BCB866DEDD2A6 /* Pods_CricLive.framework */; };
+		892E457529A4FFFB000EB4FD /* APIForT20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E457429A4FFFB000EB4FD /* APIForT20.swift */; };
+		892E457729A5002E000EB4FD /* APIForTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E457629A5002E000EB4FD /* APIForTest.swift */; };
+		892E457929A50055000EB4FD /* APIForODI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E457829A50055000EB4FD /* APIForODI.swift */; };
+		892E457B29A50124000EB4FD /* ModelForTeamRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E457A29A50124000EB4FD /* ModelForTeamRank.swift */; };
+		892E457D29A5038A000EB4FD /* TeamRankVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E457C29A5038A000EB4FD /* TeamRankVC.swift */; };
+		892E457F29A503A8000EB4FD /* TeamRankTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E457E29A503A8000EB4FD /* TeamRankTVCell.swift */; };
+		892E458129A50DB1000EB4FD /* PlayerInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E458029A50DB1000EB4FD /* PlayerInfoModel.swift */; };
+		89474D5E29A4C6C5000E837C /* APIForPlayerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89474D5D29A4C6C5000E837C /* APIForPlayerInfo.swift */; };
+		89474D6029A4CA14000E837C /* PlayerInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89474D5F29A4CA14000E837C /* PlayerInfoVC.swift */; };
+		89474D6229A4CA5A000E837C /* PlayerInfoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89474D6129A4CA5A000E837C /* PlayerInfoTVCell.swift */; };
+		894D271B29A3869100EC24A7 /* Search&InfoPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894D271A29A3869100EC24A7 /* Search&InfoPlayerModel.swift */; };
+		894D271D29A38A4400EC24A7 /* SearchPlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894D271C29A38A4400EC24A7 /* SearchPlayerVC.swift */; };
+		894D271F29A38A7900EC24A7 /* SearchPlayerTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894D271E29A38A7900EC24A7 /* SearchPlayerTVCell.swift */; };
+		894D272129A39B1300EC24A7 /* APIForSearchPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894D272029A39B1300EC24A7 /* APIForSearchPlayer.swift */; };
+		894D272529A3A34500EC24A7 /* SearchPlayerEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894D272329A3A34500EC24A7 /* SearchPlayerEntity+CoreDataClass.swift */; };
+		894D272629A3A34500EC24A7 /* SearchPlayerEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894D272429A3A34500EC24A7 /* SearchPlayerEntity+CoreDataProperties.swift */; };
+		894D272829A3AC9300EC24A7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894D272729A3AC9300EC24A7 /* CoreDataManager.swift */; };
+		89501F82299A793C0017438A /* RecentMatchesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89501F81299A793C0017438A /* RecentMatchesTVCell.swift */; };
+		89501F84299A7CD00017438A /* APIForRecentMatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89501F83299A7CD00017438A /* APIForRecentMatches.swift */; };
+		89501F8A299A84CD0017438A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89501F89299A84CD0017438A /* Model.swift */; };
+		8956AF0D29A64BD7003AA790 /* APIForLeagueFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956AF0C29A64BD7003AA790 /* APIForLeagueFixture.swift */; };
+		8956AF1129A654C1003AA790 /* LeagueFixtureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956AF1029A654C1003AA790 /* LeagueFixtureVC.swift */; };
+		8956AF1329A654EE003AA790 /* LeagueFixtureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8956AF1229A654EE003AA790 /* LeagueFixtureCollectionViewCell.swift */; };
+		895EA7A629A331A7000BF8F9 /* ModelAllPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895EA7A529A331A7000BF8F9 /* ModelAllPlayers.swift */; };
+		896B997429A7913E0060D493 /* StatisticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B997329A7913E0060D493 /* StatisticsVC.swift */; };
+		896B997629A7918E0060D493 /* StatisticsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B997529A7918E0060D493 /* StatisticsTVCell.swift */; };
+		896B997829A799880060D493 /* ModelForStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B997729A799880060D493 /* ModelForStatistics.swift */; };
+		896B997A29A7A5650060D493 /* APIForStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896B997929A7A5650060D493 /* APIForStatistics.swift */; };
+		8975471329AA0DB8003997F7 /* ModelForLiveMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975471229AA0DB8003997F7 /* ModelForLiveMatch.swift */; };
+		8975471529AA1CC8003997F7 /* APIForLiveMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975471429AA1CC8003997F7 /* APIForLiveMatch.swift */; };
+		89775E6A299CB40100BD1F7A /* RecentInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89775E69299CB40100BD1F7A /* RecentInfoVC.swift */; };
+		8986157D299F3C8900E69551 /* SquadListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8986157C299F3C8900E69551 /* SquadListVC.swift */; };
+		8986157F299F3CAC00E69551 /* SquadListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8986157E299F3CAC00E69551 /* SquadListTVCell.swift */; };
+		89861581299F416800E69551 /* APIForSquadList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89861580299F416800E69551 /* APIForSquadList.swift */; };
+		8991C55229A0E12E00184860 /* SquadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8991C55129A0E12E00184860 /* SquadModel.swift */; };
+		8995CAAE299B2FE2007E1E79 /* AllPlayersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995CAAD299B2FE2007E1E79 /* AllPlayersAPI.swift */; };
+		8995CAB0299BA090007E1E79 /* ModelForUpcomingMatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995CAAF299BA090007E1E79 /* ModelForUpcomingMatches.swift */; };
+		8995CAB2299BA0FE007E1E79 /* APIForUpcomingMatches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995CAB1299BA0FE007E1E79 /* APIForUpcomingMatches.swift */; };
+		8995CAB5299BA1C9007E1E79 /* UpcomingMatchesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995CAB4299BA1C9007E1E79 /* UpcomingMatchesVC.swift */; };
+		8995CAB7299BA1FA007E1E79 /* UpcomingMatchesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995CAB6299BA1FA007E1E79 /* UpcomingMatchesTVCell.swift */; };
+		899A019329A5C095008D6F55 /* MoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899A019229A5C095008D6F55 /* MoreVC.swift */; };
+		89AD288D29A2376C002D39D9 /* ScoreboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD288C29A2376C002D39D9 /* ScoreboardVC.swift */; };
+		89AD288F29A237D9002D39D9 /* ScoreboardTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD288E29A237D9002D39D9 /* ScoreboardTVCell.swift */; };
+		89AD289129A249C6002D39D9 /* ScoreBoardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AD289029A249C6002D39D9 /* ScoreBoardModel.swift */; };
+		89C6C52A29A22B7500C7CCBD /* APIForScoreboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C6C52929A22B7500C7CCBD /* APIForScoreboard.swift */; };
+		89F5E215299A7132000D7A37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5E214299A7132000D7A37 /* AppDelegate.swift */; };
+		89F5E217299A7132000D7A37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5E216299A7132000D7A37 /* SceneDelegate.swift */; };
+		89F5E21C299A7132000D7A37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F5E21A299A7132000D7A37 /* Main.storyboard */; };
+		89F5E21F299A7133000D7A37 /* CricLive.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89F5E21D299A7133000D7A37 /* CricLive.xcdatamodeld */; };
+		89F5E221299A7134000D7A37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F5E220299A7134000D7A37 /* Assets.xcassets */; };
+		89F5E224299A7134000D7A37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F5E222299A7134000D7A37 /* LaunchScreen.storyboard */; };
+		89F5E22D299A7252000D7A37 /* RecentMatchesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F5E22C299A7252000D7A37 /* RecentMatchesVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65BAD2AD0328F322F8DE0D61 /* Pods-CricLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricLive.release.xcconfig"; path = "Target Support Files/Pods-CricLive/Pods-CricLive.release.xcconfig"; sourceTree = "<group>"; };
+		6ED6B95B5E4BCB866DEDD2A6 /* Pods_CricLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CricLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		892E457429A4FFFB000EB4FD /* APIForT20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForT20.swift; sourceTree = "<group>"; };
+		892E457629A5002E000EB4FD /* APIForTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForTest.swift; sourceTree = "<group>"; };
+		892E457829A50055000EB4FD /* APIForODI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForODI.swift; sourceTree = "<group>"; };
+		892E457A29A50124000EB4FD /* ModelForTeamRank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForTeamRank.swift; sourceTree = "<group>"; };
+		892E457C29A5038A000EB4FD /* TeamRankVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRankVC.swift; sourceTree = "<group>"; };
+		892E457E29A503A8000EB4FD /* TeamRankTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRankTVCell.swift; sourceTree = "<group>"; };
+		892E458029A50DB1000EB4FD /* PlayerInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoModel.swift; sourceTree = "<group>"; };
+		89474D5D29A4C6C5000E837C /* APIForPlayerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForPlayerInfo.swift; sourceTree = "<group>"; };
+		89474D5F29A4CA14000E837C /* PlayerInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoVC.swift; sourceTree = "<group>"; };
+		89474D6129A4CA5A000E837C /* PlayerInfoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerInfoTVCell.swift; sourceTree = "<group>"; };
+		894D271A29A3869100EC24A7 /* Search&InfoPlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search&InfoPlayerModel.swift"; sourceTree = "<group>"; };
+		894D271C29A38A4400EC24A7 /* SearchPlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlayerVC.swift; sourceTree = "<group>"; };
+		894D271E29A38A7900EC24A7 /* SearchPlayerTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlayerTVCell.swift; sourceTree = "<group>"; };
+		894D272029A39B1300EC24A7 /* APIForSearchPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForSearchPlayer.swift; sourceTree = "<group>"; };
+		894D272329A3A34500EC24A7 /* SearchPlayerEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchPlayerEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		894D272429A3A34500EC24A7 /* SearchPlayerEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchPlayerEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		894D272729A3AC9300EC24A7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		89501F81299A793C0017438A /* RecentMatchesTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMatchesTVCell.swift; sourceTree = "<group>"; };
+		89501F83299A7CD00017438A /* APIForRecentMatches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForRecentMatches.swift; sourceTree = "<group>"; };
+		89501F89299A84CD0017438A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8956AF0C29A64BD7003AA790 /* APIForLeagueFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForLeagueFixture.swift; sourceTree = "<group>"; };
+		8956AF1029A654C1003AA790 /* LeagueFixtureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueFixtureVC.swift; sourceTree = "<group>"; };
+		8956AF1229A654EE003AA790 /* LeagueFixtureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueFixtureCollectionViewCell.swift; sourceTree = "<group>"; };
+		895EA7A529A331A7000BF8F9 /* ModelAllPlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAllPlayers.swift; sourceTree = "<group>"; };
+		896B997329A7913E0060D493 /* StatisticsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsVC.swift; sourceTree = "<group>"; };
+		896B997529A7918E0060D493 /* StatisticsTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsTVCell.swift; sourceTree = "<group>"; };
+		896B997729A799880060D493 /* ModelForStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForStatistics.swift; sourceTree = "<group>"; };
+		896B997929A7A5650060D493 /* APIForStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForStatistics.swift; sourceTree = "<group>"; };
+		8975471229AA0DB8003997F7 /* ModelForLiveMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForLiveMatch.swift; sourceTree = "<group>"; };
+		8975471429AA1CC8003997F7 /* APIForLiveMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForLiveMatch.swift; sourceTree = "<group>"; };
+		89775E69299CB40100BD1F7A /* RecentInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentInfoVC.swift; sourceTree = "<group>"; };
+		8986157C299F3C8900E69551 /* SquadListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadListVC.swift; sourceTree = "<group>"; };
+		8986157E299F3CAC00E69551 /* SquadListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadListTVCell.swift; sourceTree = "<group>"; };
+		89861580299F416800E69551 /* APIForSquadList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForSquadList.swift; sourceTree = "<group>"; };
+		8991C55129A0E12E00184860 /* SquadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquadModel.swift; sourceTree = "<group>"; };
+		8995CAAD299B2FE2007E1E79 /* AllPlayersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPlayersAPI.swift; sourceTree = "<group>"; };
+		8995CAAF299BA090007E1E79 /* ModelForUpcomingMatches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForUpcomingMatches.swift; sourceTree = "<group>"; };
+		8995CAB1299BA0FE007E1E79 /* APIForUpcomingMatches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForUpcomingMatches.swift; sourceTree = "<group>"; };
+		8995CAB4299BA1C9007E1E79 /* UpcomingMatchesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingMatchesVC.swift; sourceTree = "<group>"; };
+		8995CAB6299BA1FA007E1E79 /* UpcomingMatchesTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingMatchesTVCell.swift; sourceTree = "<group>"; };
+		899A019229A5C095008D6F55 /* MoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVC.swift; sourceTree = "<group>"; };
+		89AD288C29A2376C002D39D9 /* ScoreboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardVC.swift; sourceTree = "<group>"; };
+		89AD288E29A237D9002D39D9 /* ScoreboardTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardTVCell.swift; sourceTree = "<group>"; };
+		89AD289029A249C6002D39D9 /* ScoreBoardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardModel.swift; sourceTree = "<group>"; };
+		89C6C52929A22B7500C7CCBD /* APIForScoreboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForScoreboard.swift; sourceTree = "<group>"; };
+		89F5E211299A7132000D7A37 /* CricLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CricLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89F5E214299A7132000D7A37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89F5E216299A7132000D7A37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		89F5E21B299A7132000D7A37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89F5E21E299A7133000D7A37 /* CricLive.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CricLive.xcdatamodel; sourceTree = "<group>"; };
+		89F5E220299A7134000D7A37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89F5E223299A7134000D7A37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89F5E225299A7134000D7A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89F5E22C299A7252000D7A37 /* RecentMatchesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentMatchesVC.swift; sourceTree = "<group>"; };
+		EEF289ECFEA832E40B45339B /* Pods-CricLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricLive.debug.xcconfig"; path = "Target Support Files/Pods-CricLive/Pods-CricLive.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89F5E20E299A7132000D7A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FDF51853643B373B3CAD9B /* Pods_CricLive.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A8D74347CFF29E53DAB5ECB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEF289ECFEA832E40B45339B /* Pods-CricLive.debug.xcconfig */,
+				65BAD2AD0328F322F8DE0D61 /* Pods-CricLive.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		50639EF13BBDFDC7D09A4AA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6ED6B95B5E4BCB866DEDD2A6 /* Pods_CricLive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		894D272229A3A32500EC24A7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				894D272329A3A34500EC24A7 /* SearchPlayerEntity+CoreDataClass.swift */,
+				894D272429A3A34500EC24A7 /* SearchPlayerEntity+CoreDataProperties.swift */,
+				894D272729A3AC9300EC24A7 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		89501F85299A7CF60017438A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				89501F83299A7CD00017438A /* APIForRecentMatches.swift */,
+				89861580299F416800E69551 /* APIForSquadList.swift */,
+				8995CAB1299BA0FE007E1E79 /* APIForUpcomingMatches.swift */,
+				8995CAAD299B2FE2007E1E79 /* AllPlayersAPI.swift */,
+				89C6C52929A22B7500C7CCBD /* APIForScoreboard.swift */,
+				894D272029A39B1300EC24A7 /* APIForSearchPlayer.swift */,
+				89474D5D29A4C6C5000E837C /* APIForPlayerInfo.swift */,
+				892E457429A4FFFB000EB4FD /* APIForT20.swift */,
+				892E457629A5002E000EB4FD /* APIForTest.swift */,
+				892E457829A50055000EB4FD /* APIForODI.swift */,
+				8956AF0C29A64BD7003AA790 /* APIForLeagueFixture.swift */,
+				896B997929A7A5650060D493 /* APIForStatistics.swift */,
+				8975471429AA1CC8003997F7 /* APIForLiveMatch.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		89501F86299A7D090017438A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89501F89299A84CD0017438A /* Model.swift */,
+				8995CAAF299BA090007E1E79 /* ModelForUpcomingMatches.swift */,
+				8991C55129A0E12E00184860 /* SquadModel.swift */,
+				89AD289029A249C6002D39D9 /* ScoreBoardModel.swift */,
+				895EA7A529A331A7000BF8F9 /* ModelAllPlayers.swift */,
+				894D271A29A3869100EC24A7 /* Search&InfoPlayerModel.swift */,
+				892E457A29A50124000EB4FD /* ModelForTeamRank.swift */,
+				892E458029A50DB1000EB4FD /* PlayerInfoModel.swift */,
+				896B997729A799880060D493 /* ModelForStatistics.swift */,
+				8975471229AA0DB8003997F7 /* ModelForLiveMatch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8986157A299F2C0500E69551 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8986157C299F3C8900E69551 /* SquadListVC.swift */,
+				8986157E299F3CAC00E69551 /* SquadListTVCell.swift */,
+				8995CAB4299BA1C9007E1E79 /* UpcomingMatchesVC.swift */,
+				8995CAB6299BA1FA007E1E79 /* UpcomingMatchesTVCell.swift */,
+				89F5E22C299A7252000D7A37 /* RecentMatchesVC.swift */,
+				89501F81299A793C0017438A /* RecentMatchesTVCell.swift */,
+				89775E69299CB40100BD1F7A /* RecentInfoVC.swift */,
+				89AD288C29A2376C002D39D9 /* ScoreboardVC.swift */,
+				89AD288E29A237D9002D39D9 /* ScoreboardTVCell.swift */,
+				894D271C29A38A4400EC24A7 /* SearchPlayerVC.swift */,
+				894D271E29A38A7900EC24A7 /* SearchPlayerTVCell.swift */,
+				89474D5F29A4CA14000E837C /* PlayerInfoVC.swift */,
+				89474D6129A4CA5A000E837C /* PlayerInfoTVCell.swift */,
+				892E457C29A5038A000EB4FD /* TeamRankVC.swift */,
+				892E457E29A503A8000EB4FD /* TeamRankTVCell.swift */,
+				899A019229A5C095008D6F55 /* MoreVC.swift */,
+				8956AF1029A654C1003AA790 /* LeagueFixtureVC.swift */,
+				8956AF1229A654EE003AA790 /* LeagueFixtureCollectionViewCell.swift */,
+				896B997329A7913E0060D493 /* StatisticsVC.swift */,
+				896B997529A7918E0060D493 /* StatisticsTVCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89F5E208299A7132000D7A37 = {
+			isa = PBXGroup;
+			children = (
+				89F5E213299A7132000D7A37 /* CricLive */,
+				89F5E212299A7132000D7A37 /* Products */,
+				1A8D74347CFF29E53DAB5ECB /* Pods */,
+				50639EF13BBDFDC7D09A4AA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		89F5E212299A7132000D7A37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89F5E211299A7132000D7A37 /* CricLive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89F5E213299A7132000D7A37 /* CricLive */ = {
+			isa = PBXGroup;
+			children = (
+				894D272229A3A32500EC24A7 /* CoreData */,
+				8986157A299F2C0500E69551 /* View */,
+				89501F86299A7D090017438A /* Models */,
+				89501F85299A7CF60017438A /* API */,
+				89F5E214299A7132000D7A37 /* AppDelegate.swift */,
+				89F5E216299A7132000D7A37 /* SceneDelegate.swift */,
+				89F5E21A299A7132000D7A37 /* Main.storyboard */,
+				89F5E220299A7134000D7A37 /* Assets.xcassets */,
+				89F5E222299A7134000D7A37 /* LaunchScreen.storyboard */,
+				89F5E225299A7134000D7A37 /* Info.plist */,
+				89F5E21D299A7133000D7A37 /* CricLive.xcdatamodeld */,
+			);
+			path = CricLive;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89F5E210299A7132000D7A37 /* CricLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89F5E228299A7134000D7A37 /* Build configuration list for PBXNativeTarget "CricLive" */;
+			buildPhases = (
+				E8678D4A2F7D1D13B37D6F70 /* [CP] Check Pods Manifest.lock */,
+				89F5E20D299A7132000D7A37 /* Sources */,
+				89F5E20E299A7132000D7A37 /* Frameworks */,
+				89F5E20F299A7132000D7A37 /* Resources */,
+				9DC5861EA5A58F3A9A89714B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CricLive;
+			productName = CricLive;
+			productReference = 89F5E211299A7132000D7A37 /* CricLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89F5E209299A7132000D7A37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					89F5E210299A7132000D7A37 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 89F5E20C299A7132000D7A37 /* Build configuration list for PBXProject "CricLive" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89F5E208299A7132000D7A37;
+			productRefGroup = 89F5E212299A7132000D7A37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89F5E210299A7132000D7A37 /* CricLive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89F5E20F299A7132000D7A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89F5E224299A7134000D7A37 /* LaunchScreen.storyboard in Resources */,
+				89F5E221299A7134000D7A37 /* Assets.xcassets in Resources */,
+				89F5E21C299A7132000D7A37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DC5861EA5A58F3A9A89714B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CricLive/Pods-CricLive-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CricLive/Pods-CricLive-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CricLive/Pods-CricLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8678D4A2F7D1D13B37D6F70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CricLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89F5E20D299A7132000D7A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8975471529AA1CC8003997F7 /* APIForLiveMatch.swift in Sources */,
+				894D271D29A38A4400EC24A7 /* SearchPlayerVC.swift in Sources */,
+				892E457B29A50124000EB4FD /* ModelForTeamRank.swift in Sources */,
+				8956AF1129A654C1003AA790 /* LeagueFixtureVC.swift in Sources */,
+				89501F8A299A84CD0017438A /* Model.swift in Sources */,
+				896B997829A799880060D493 /* ModelForStatistics.swift in Sources */,
+				899A019329A5C095008D6F55 /* MoreVC.swift in Sources */,
+				892E457529A4FFFB000EB4FD /* APIForT20.swift in Sources */,
+				892E457F29A503A8000EB4FD /* TeamRankTVCell.swift in Sources */,
+				8986157D299F3C8900E69551 /* SquadListVC.swift in Sources */,
+				896B997629A7918E0060D493 /* StatisticsTVCell.swift in Sources */,
+				894D272829A3AC9300EC24A7 /* CoreDataManager.swift in Sources */,
+				89AD288F29A237D9002D39D9 /* ScoreboardTVCell.swift in Sources */,
+				894D272529A3A34500EC24A7 /* SearchPlayerEntity+CoreDataClass.swift in Sources */,
+				89501F84299A7CD00017438A /* APIForRecentMatches.swift in Sources */,
+				89474D6229A4CA5A000E837C /* PlayerInfoTVCell.swift in Sources */,
+				892E457D29A5038A000EB4FD /* TeamRankVC.swift in Sources */,
+				89861581299F416800E69551 /* APIForSquadList.swift in Sources */,
+				892E457729A5002E000EB4FD /* APIForTest.swift in Sources */,
+				8995CAB7299BA1FA007E1E79 /* UpcomingMatchesTVCell.swift in Sources */,
+				8995CAB0299BA090007E1E79 /* ModelForUpcomingMatches.swift in Sources */,
+				894D272129A39B1300EC24A7 /* APIForSearchPlayer.swift in Sources */,
+				89775E6A299CB40100BD1F7A /* RecentInfoVC.swift in Sources */,
+				89C6C52A29A22B7500C7CCBD /* APIForScoreboard.swift in Sources */,
+				8975471329AA0DB8003997F7 /* ModelForLiveMatch.swift in Sources */,
+				8991C55229A0E12E00184860 /* SquadModel.swift in Sources */,
+				8995CAAE299B2FE2007E1E79 /* AllPlayersAPI.swift in Sources */,
+				8995CAB5299BA1C9007E1E79 /* UpcomingMatchesVC.swift in Sources */,
+				895EA7A629A331A7000BF8F9 /* ModelAllPlayers.swift in Sources */,
+				89474D5E29A4C6C5000E837C /* APIForPlayerInfo.swift in Sources */,
+				8956AF0D29A64BD7003AA790 /* APIForLeagueFixture.swift in Sources */,
+				894D271B29A3869100EC24A7 /* Search&InfoPlayerModel.swift in Sources */,
+				896B997A29A7A5650060D493 /* APIForStatistics.swift in Sources */,
+				89474D6029A4CA14000E837C /* PlayerInfoVC.swift in Sources */,
+				892E458129A50DB1000EB4FD /* PlayerInfoModel.swift in Sources */,
+				8986157F299F3CAC00E69551 /* SquadListTVCell.swift in Sources */,
+				8956AF1329A654EE003AA790 /* LeagueFixtureCollectionViewCell.swift in Sources */,
+				894D271F29A38A7900EC24A7 /* SearchPlayerTVCell.swift in Sources */,
+				89F5E215299A7132000D7A37 /* AppDelegate.swift in Sources */,
+				8995CAB2299BA0FE007E1E79 /* APIForUpcomingMatches.swift in Sources */,
+				892E457929A50055000EB4FD /* APIForODI.swift in Sources */,
+				896B997429A7913E0060D493 /* StatisticsVC.swift in Sources */,
+				89AD289129A249C6002D39D9 /* ScoreBoardModel.swift in Sources */,
+				894D272629A3A34500EC24A7 /* SearchPlayerEntity+CoreDataProperties.swift in Sources */,
+				89AD288D29A2376C002D39D9 /* ScoreboardVC.swift in Sources */,
+				89F5E21F299A7133000D7A37 /* CricLive.xcdatamodeld in Sources */,
+				89F5E22D299A7252000D7A37 /* RecentMatchesVC.swift in Sources */,
+				89501F82299A793C0017438A /* RecentMatchesTVCell.swift in Sources */,
+				89F5E217299A7132000D7A37 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		89F5E21A299A7132000D7A37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89F5E21B299A7132000D7A37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		89F5E222299A7134000D7A37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89F5E223299A7134000D7A37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		89F5E226299A7134000D7A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89F5E227299A7134000D7A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89F5E229299A7134000D7A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF289ECFEA832E40B45339B /* Pods-CricLive.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CricLive/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bjit.CricLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89F5E22A299A7134000D7A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65BAD2AD0328F322F8DE0D61 /* Pods-CricLive.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CricLive/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bjit.CricLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89F5E20C299A7132000D7A37 /* Build configuration list for PBXProject "CricLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89F5E226299A7134000D7A37 /* Debug */,
+				89F5E227299A7134000D7A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89F5E228299A7134000D7A37 /* Build configuration list for PBXNativeTarget "CricLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89F5E229299A7134000D7A37 /* Debug */,
+				89F5E22A299A7134000D7A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		89F5E21D299A7133000D7A37 /* CricLive.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				89F5E21E299A7133000D7A37 /* CricLive.xcdatamodel */,
+			);
+			currentVersion = 89F5E21E299A7133000D7A37 /* CricLive.xcdatamodel */;
+			path = CricLive.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 89F5E209299A7132000D7A37 /* Project object */;
+}
